@@ -25,7 +25,7 @@ public class DiaryService {
                 .icon(weatherData.getIcon())
                 .temperature(weatherData.getTemperature())
                 .text(text)
-                .date(weatherData.getDate())
+                .date(date)
                 .build();
         return diaryRepository.save(diary);
     }
